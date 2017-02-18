@@ -1,0 +1,80 @@
+#totalValue, #totalInvested {
+
+	font-size: 20px;
+
+}
+
+/* Note to Self: Revise Bootstrap */
+#navbar-slogan {
+
+	font-size: 12px !important;
+	font-style: italic !important;
+	background-color: transparent;
+	color: #9d9d9d;
+
+}
+
+/* Alignment Fix */
+#statRow .col-lg-3 {
+
+	padding-left: 0px !important;
+
+
+}
+
+/*  Dirty Hack to Center AJAX Columns */
+#portfolio tr th:nth-child(4),
+#portfolio tr th:nth-child(6),
+#portfolio tr th:nth-child(7),
+#portfolio tr td:nth-child(4),
+#portfolio tr td:nth-child(6),
+#portfolio tr td:nth-child(7) {
+
+ text-align:center !important;
+
+}
+
+/* I Rue the Day Datatables! */
+
+.dataTables_length {
+
+	width: 33%;
+	display: inline;
+	padding-right: 10px;
+
+}
+
+.dt-buttons {
+
+	width: 33%
+	display: inline;
+
+}
+
+.dataTables_filter {
+
+	width: 33%
+	display: inline;
+	float: right;
+
+}
+
+/* Datatables Filter Row Has No Class or Id
+ so rather annoyingly left with white space
+ after removing these elements from extra small
+ screens. */
+@media screen and (max-width: 768px) {
+
+	.dataTables_length, .dataTables_filter {
+
+		display: none !important;
+
+	}
+	.dt-buttons, .dataTables_filter {
+
+		padding-top: 5px;
+
+	}
+
+}
+

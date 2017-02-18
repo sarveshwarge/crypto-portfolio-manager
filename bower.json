@@ -1,0 +1,24 @@
+{
+  "name": "Cryptocurrency Portfolio Manager",
+  "authors": [
+    "Dominic Robinson <development-K9RvgheM1OmXW9pm@dcrdev.com>"
+  ],
+  "description": "",
+  "main": "index.php",
+  "license": "GPLv3",
+  "homepage": "https://www.dcrdev.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "datatables.net-buttons": "^1.2.4",
+    "datatables.net-buttons-bs": "^1.2.4",
+    "font-awesome": "^4.7.0"
+  }
+}
