@@ -12,7 +12,7 @@
 			$marketApiUrl = "https://api.coinmarketcap.com/v1/ticker/";
 
 			// Cache market data every 60 seconds
-			$cacheFile = $config['cachFile'];
+			$cacheFile = $config['cacheFile'];
 			if (is_file($cacheFile) && ((time() - filemtime($cacheFile)) > 60) || trim(file_get_contents($cacheFile)) == false)
 			{
 
@@ -91,10 +91,10 @@
 			curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
 			curl_setopt ($ch, CURLOPT_USERAGENT, $userAgent);
 			curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
-			$rawdata = curl_exec($ch);
+			$rawData = curl_exec($ch);
 			curl_close($ch);
 
-			$data = explode('bld>', $rawdata);
+			$data = explode('bld>', $rawData);
 			$data = explode($toCurrency, $data[1]);
 
 			return $data[0];
